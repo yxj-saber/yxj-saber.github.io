@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
     <meta name="baidu-site-verification" content="dIcXMeY8Ya">
     
-    <title>first | yxjsaber</title>
+    <title>yxjsaber</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="keywords" content="Jelon, 前端, Web, 张德龙, 前端开发">
     <meta name="description" content="Jelon个人前端小站">
@@ -56,19 +56,19 @@
         <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
         <ul class="menu hidden" id="JELON__menu">
             
-            <li rel="/2018/12/21/first/index.html" class="item ">
+            <li rel="/2018/12/21/Nginx服务器安装/index.html" class="item ">
                 <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
             </li>
             
-            <li rel="/2018/12/21/first/index.html" class="item ">
+            <li rel="/2018/12/21/Nginx服务器安装/index.html" class="item ">
                 <a href="/lab/" title="实验室" class="icon-lab">&nbsp;实验室</a>
             </li>
             
-            <li rel="/2018/12/21/first/index.html" class="item ">
+            <li rel="/2018/12/21/Nginx服务器安装/index.html" class="item ">
                 <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
             </li>
             
-            <li rel="/2018/12/21/first/index.html" class="item ">
+            <li rel="/2018/12/21/Nginx服务器安装/index.html" class="item ">
                 <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
             </li>
             
@@ -119,14 +119,54 @@
 <!-- 文章 -->
 <article class="post article">
     <header class="text-center">
-        <h3 class="post-title"><span>first</span></h3>
+        <h3 class="post-title"><span></span></h3>
     </header>
     <p class="post-meta text-center">
         Jelon 发表于
-        <time datetime="2018-12-21T02:16:24.000Z">2018-12-21</time>
+        <time datetime="2018-12-21T07:58:40.108Z">2018-12-21</time>
     </p>
     <div class="post-content">
-        
+        <h1 id="Nginx服务器"><a href="#Nginx服务器" class="headerlink" title="Nginx服务器"></a>Nginx服务器</h1><h3 id="1-阿里云添加80端口"><a href="#1-阿里云添加80端口" class="headerlink" title="1.阿里云添加80端口"></a>1.阿里云添加80端口</h3><p>阿里云上默认只有一个22端口用来做远程登录，如果希望在阿里云上安装支持http请求的nginx服务器，需要给阿里云添加80端口</p>
+<p><img src="./img/aliyun0.png" alt="打开安全组设置"><br><img src="./img/aliyun2.png" alt=""><br><img src="./img/aliyun3.png" alt=""><br><img src="./img/aliyun4.png" alt=""></p>
+<h3 id="2-安装nginx"><a href="#2-安装nginx" class="headerlink" title="2. 安装nginx"></a>2. 安装nginx</h3><p>a) 添加nginx存储库  </p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install epel-release</span><br></pre></td></tr></table></figure>
+<p>b) 安装nginx</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">	yum install nginx</span><br><span class="line">```  </span><br><span class="line">c) 运行nginx  </span><br><span class="line">Nginx不会自行启动。要运行Nginx</span><br></pre></td></tr></table></figure>
+<pre><code>systemctl start nginx
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">nginx的运行命令:</span><br></pre></td></tr></table></figure>
+<pre><code>systemctl status nginx 查看nginx的状态  
+systemctl start/stop/enable/disable nginx 启动/关闭/设置开机启动/禁止开机启动  
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">d) 系统启动时启动Nginx</span><br></pre></td></tr></table></figure>
+<pre><code>systemctl enable nginx
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">e）如果您正在运行防火墙，请运行以下命令以允许HTTP和HTTPS通信：</span><br></pre></td></tr></table></figure>
+<pre><code>sudo firewall-cmd --permanent --zone=public --add-service=http 
+
+sudo firewall-cmd --permanent --zone=public --add-service=https
+
+sudo firewall-cmd --reload
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">### 3.nginx目录共享配置  </span><br><span class="line">a) 在contOS目录中确定一个需要共享的文件夹，例如： /home/yuting  </span><br><span class="line">b) 打开 etc/nginx/nginx.conf 文件，设置server</span><br></pre></td></tr></table></figure>
+<pre><code>#共享设置 - 在浏览器中输入服务器ip地址，会展示共享目录的文件列表
+root /home/yuting;
+location / {
+       autoindex on;
+       autoindex_exact_size on;
+       autoindex_localtime on;
+}  
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">除了可以共享文件，还可以自定义页面</span><br></pre></td></tr></table></figure>
+<pre><code>#自定义服务器页面
+location / {
+        root /home/yuting;
+        index index.html index.htm;
+}
+</code></pre><p><code>`</code></p>
+<p>注意： 如果出现权限问题，可以修改目录的权限  </p>
+<h1 id="ssh密钥认证"><a href="#ssh密钥认证" class="headerlink" title="ssh密钥认证"></a>ssh密钥认证</h1><p>1.在主机和从机上执行：<code>ssh-keygen</code></p>
+<p>2.在从机上执行:  <code>scp  id_rsa.pub  root@主机地址:~/.ssh/master.pub</code><br>(上面这条指令是将从机上的 id_rsa.pub文件拷贝传递给到主机的.ssh文件夹下，并且命名为’master.pub’)</p>
+<p>3.在主机中的.ssh文件夹中创建authorized_keys文件： <code>touch authorized_keys</code> </p>
+<p>4.修改文件authorized_keys的权限: <code>chmod 600  authorized_keys</code>  </p>
+<p>5.将master.pub放进authorized_keys文件中:  <code>cat master.pub &gt;&gt;  authorized_keys</code></p>
+<p>6.在操作主机的时候，需要主机能够自己免密访问自己就将自己的公钥放在自己的authorized_keys文件中</p>
+
     </div>
     <p class="post-meta">
         <span class="post-cat">分类：
@@ -158,20 +198,16 @@
     
     <span class="prev fl">
         上一篇<br>
-        <a href="/2018/12/21/git常用指令/">
-            
-                无标题
-            
-        </a>
+        <a href="javascript: void(0);">没有上一篇了</a>
     </span>
     
 
     
     <span class="next fr">
         下一篇<br>
-        <a href="/2018/12/21/hello-world/">
+        <a href="/2018/12/21/git常用指令/">
             
-                Hello World
+                无标题
             
         </a>
     </span>
@@ -248,7 +284,7 @@
   <script>
   JELON.Comment({
     container: 'comments',
-    label: 'first' || '2018/12/21/first/',
+    label: 'Nginx服务器安装' || '2018/12/21/Nginx服务器安装/',
     owner: 'your_github_id',
     repo: 'your_blog_comments',
     clientId: 'your_client_id',
