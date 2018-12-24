@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
     <meta name="baidu-site-verification" content="dIcXMeY8Ya">
     
-    <title>`linux`标签下的文章 | yxjsaber</title>
+    <title>`数据库`标签下的文章 | yxjsaber</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="keywords" content="Jelon, 前端, Web, 张德龙, 前端开发">
     <meta name="description" content="Jelon个人前端小站">
@@ -56,19 +56,19 @@
         <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
         <ul class="menu hidden" id="JELON__menu">
             
-            <li rel="/tags/linux/index.html" class="item ">
+            <li rel="/tags/数据库/index.html" class="item ">
                 <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
             </li>
             
-            <li rel="/tags/linux/index.html" class="item ">
+            <li rel="/tags/数据库/index.html" class="item ">
                 <a href="/lab/" title="实验室" class="icon-lab">&nbsp;实验室</a>
             </li>
             
-            <li rel="/tags/linux/index.html" class="item ">
+            <li rel="/tags/数据库/index.html" class="item ">
                 <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
             </li>
             
-            <li rel="/tags/linux/index.html" class="item ">
+            <li rel="/tags/数据库/index.html" class="item ">
                 <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
             </li>
             
@@ -120,7 +120,7 @@
     <h3 class="widget-hd">
         <strong>
             
-                `linux`标签下的文章
+                `数据库`标签下的文章
             
         </strong>
     </h3>
@@ -130,28 +130,28 @@
     <header>
         <!-- 标签这有且只能显示一个 -->
         
-        <a class="cat-link" href="/categories/git/">git</a>
+        <a class="cat-link" href="/categories/2018年10月/">2018年10月</a>
         
         <!-- 文章标题 -->
         
     <h3 class="post-title">
-    	<a href="http://yoursite.com/2018/12/24/git常用指令/">
-    		git常用指令
+    	<a href="http://yoursite.com/2018/12/24/20181224/">
+    		20181024学习记录
     	</a>
     </h3>
 
     </header>
     <p class="post-meta">
         Jelon 发表于
-        <time datetime="2018-12-24T11:10:00.000Z">2018-12-24</time>
+        <time datetime="2018-12-24T13:00:00.000Z">2018-12-24</time>
         &nbsp;&nbsp;
         <span class="post-tags">
             标签：
             
     
-        <a href="/tags/git/" title="git">git</a> / 
+        <a href="/tags/数据库/" title="数据库">数据库</a> / 
     
-        <a href="/tags/linux/" title="linux">linux</a>
+        <a href="/tags/MySQL/" title="MySQL">MySQL</a>
     
 
         </span>
@@ -160,25 +160,65 @@
     <div class="post-content">
         <div class="post-excerpt">
             
-                <h1 id="git常用指令"><a href="#git常用指令" class="headerlink" title="git常用指令"></a>git常用指令</h1><h2 id="1-基本指令"><a href="#1-基本指令" class="headerlink" title="1.基本指令"></a>1.基本指令</h2><p><code>git init</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ——  新建git仓库<br><code>git add 文件/文件夹</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ——  将文件添加到缓存区中<br><code>git add -A</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — 添加所有内容到缓存区中<br><code>git stutas</code> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;———    查看git状态<br><code>git commit -m  ‘提交信息’</code>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——  将缓存区中的内容全部提交到git本地仓库中  </p>
-<p><code>git log</code>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——-    查看提交日志  </p>
-<p><code>git reset  - - hard   HEAD</code>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——   让工作目录中的内容和仓库中的内容保持一致<br><code>git reset  --hard HEAD^</code>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——  回到上一个版本<br><code>git  reset  - - hard 版本号</code>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;——  回到指定的版本<br><code>git checkout  - -  文件名</code>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ——  从暂存区中恢复工作目录中的内容(让工作区中的指定文件，回到上次提交的时候的状态)  </p>
-<p><code>git clone &lt;url&gt;</code> - 将服务器上的项目(仓库)克隆 (使用https地址需要输入密码，使用ssh地址需要添加公钥)  </p>
-<p><code>git remote add origin 地址</code>      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—– 关联远程仓库(只需要关联一次)</p>
-<p><code>git push [-u] origin master</code>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;—– 提交(-u在第一次提交分之的时候才用)  </p>
-<h2 id="2-分之管理"><a href="#2-分之管理" class="headerlink" title="2.分之管理"></a>2.分之管理</h2><p>创建仓库会默认给我们创建一个master分之,这个分之一般作为提交和发布分之;开发一般会自己创建一个develop分之，用来开发和测试;多人协作的时候还可能根据不同的人或者(不同的功能)创建不同的分之，用来独立开发  </p>
-<p>常见分之： master(主要是合并develop), develop(主要合并下面的其他分支), 功能/人员分之(开发)  </p>
-<p><code>git branch [-a]</code>   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;        - 查看分之<br><code>git branch 分之名</code>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 创建分之<br><code>git checkout   分支名</code>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-   切换分之<br><code>git checkout -b 分之名</code>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    - 切换并创建新的分之<br><code>git diff    分之1  分之2</code>        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 查看两个分之之间的差异<br><code>git merge 分之名</code>            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- 让当前分之和指定分之进行合并     </p>
-<p>注意: 切换分之、push、pull，这些操作前要保证工作区是clean  </p>
-<p>怎么避免冲突：  不要发生多个分之对同一个文件在同一个版本下进行修改(和同伴确认和商量)</p>
+                <p>##1.python第三方处理excel表格库<br>&emsp;读第三方库 - xlrd<br>&emsp;写第三方库 - xlwt</p>
+<p>##2.数据库<br>&emsp;实现项目中的数据持久化</p>
+<p>##3.数据库的类别：</p>
+<p>###3.1 关系型数据库 - MySQL</p>
+<p>####3.1.1 理论基础：集合论和关系代数</p>
+<p>####3.1.2 用二维表来组织数据<br>&emsp;行（记录）<br>&emsp;列（字段）<br>&emsp;能够唯一标识一条记录的列称为主键（primary keu）</p>
+<p>####3.1.3 SQL - 结构化查询语言<br>&emsp;DDL - 数据定义语言 - create/drop/alter<br>&emps;DML - 数据操作语言 - insert/delete/update/select<br>&emsp;DCL - 数据控制语言 - grant/revoke/commit/rollback</p>
+<p>####3.1.4 关系型数据库产品<br>&emsp;Oracle - 甲骨文公司<br>&emsp;MySQL - 甲骨文公司 - MariaDB（开源分支）<br>&emsp;DB2(IBM)、SQLServer、PostgreSQL、SQLite</p>
+<p>###3.2 NoSQL数据库（非关系型数据库）- Redis</p>
+<p>####3.2.1 非关系型数据库产品<br>&emsp;MongoDB - 文档数据库 - 适合数据量大，价值不高的数据<br>&emsp;Redis - KV数据库（键值对数据库） - 性能好，适合做高速缓存服务<br>&emsp;ElasticSearch - 搜索引擎</p>
+<p>#-Linux安装软件</p>
+<p>##1.包管理工具 - yum / rpm</p>
+<p>##2.Docker<br>&emsp;Docker - 提供虚拟化服务，创建虚拟化容器并安装软件<br>&emsp;安装Docker：yum -y install docker-io<br>&emsp;yum -y remove docker-io<br>&emsp;yum info …<br>&emsp;yum search …<br>&emsp;yum list installed | grep docker<br>&emsp;启动Docker服务：systemstl start docker<br>&emsp;关闭Docker服务：systemstl stop docker<br>&emsp;重启服务：systemstl stop docker<br>&emsp;查看状态:systemstl status docker<br>&emsp;开机自启动：systemstl enable docker<br>&emsp;禁止开机自启动：systemstl disable docker</p>
+<p>##3.使用Docker的命令</p>
+<p>###3.1查看已经下载的镜像文件（安装包）：<br>&emsp;docker image</p>
+<p>###3.2下载MySQL的镜像文件:<br>&emsp;docker pull mysql:5.7</p>
+<p>&emsp;&emsp;MySQL数据库超级管理员账号 - root<br>&emsp;&emsp;Oracle数据库超级管理员账号 - sys<br>&emsp;&emsp;SQLServer数据库超级管理员账号 - sa</p>
+<p>###3.3创建并运行容器<br>&emsp;docker run -d -p 3306：3306 –name mysql57 -e &emsp;MYSQL_ROOT_PASSWORD=123456 mysql:5.7<br>&emsp;&emsp;-d<br>&emsp;&emsp;-p - 发布端口<br>&emsp;MySQL默认使用tcp3306端口</p>
+<p>###3.4查看运行中的容器<br>&emsp;docker ps</p>
+<p>###3.5查看所有容器<br>&emsp;docker container ls -a</p>
+<p>###3.6停止容器<br>&emsp;docker stop 容器名</p>
+<p>###3.7启动容器<br>&emsp;docker stop 容器名</p>
+<p>###3.8删除容器<br>&emsp;docker rm -f 容器名</p>
+<p>#-安装MySQL客户端工具：<br>&emsp;Navicat for MySQL - 猫<br>&emsp;SQLyog - 海豚<br>&emsp;Toad for MySQL - 蛤蟆</p>
+<p>#-数据库操作</p>
+<p>###SQL - 结构化查询语言</p>
+<p>###DDL - 数据定义语言 - create / drop / alter</p>
+<p>###DML - 数据操作语言 - insert / delete / update / select</p>
+<p>###DCL - 数据控制语言 - grant / revoke</p>
+<p>####如果存在名为srs的数据库就删除它（慎重）<br>&emsp;drop database if exists srs;</p>
+<p>####创建名为srs的数据库并设置默认字符集为utf8<br>&emsp;– latin1 - iso-8859-1<br>&emsp;– ASCII / Unicode<br>&emsp;create database srs default charset utf8;</p>
+<p>####切换到srs数据库<br>&emsp;use srs;</p>
+<p>####如果存在名为tb_student的表就删除<br>&emsp;drop table if exists tb_student;</p>
+<p>####创建学生表tb_student<br>&emsp;create table tb_student<br>&emsp;(<br>&emsp;stuid int not null comment ‘学号’,<br>&emsp;stuname varchar(10) not null comment ‘姓名’,<br>&emsp;stusex bit default 1 comment ‘性别’,<br>&emsp;stubirth date comment ‘出生日期’,<br>&emsp;stuaddr varchar(255) comment ‘家庭住址’,<br>&emsp;primary key (stuid)<br>&emsp;);</p>
+<p>&emsp;– Error: Duplicated Entry<br>&emsp;– crash course<br>&emsp;– best practice</p>
+<p>####修改学生表添加联系方式列<br>&emsp;alter table tb_student add column stutel char(11);</p>
+<p>####修改学生表删除联系方式列<br>&emsp;alter table tb_student drop column stutel;</p>
+<p>####向学生表插入数据<br>&emsp;insert into tb_student values<br>&emsp;(1001, ‘骆昊’, 1, ‘1980-11-28’, ‘四川成都’);</p>
+<p>####插入部分字段<br>&emsp;insert into tb_student (stuid, stuname) values<br>&emsp;(1002, ‘王大锤’);</p>
+<p>####插入多条记录<br>&emsp;insert into tb_student values<br>&emsp;(1003, ‘白元芳’, 1, ‘1988-5-5’, null),<br>&emsp;(1004, ‘白洁’, 0, null, null),<br>&emsp;(1005, ‘狄仁杰’, default, ‘1992-3-8’, ‘四川成都’);</p>
+<p>####截断表<br>&emsp;truncate table tb_student;</p>
+<p>####删除学号为1002的学生<br>&emsp;delete from tb_student where stuid=1002;</p>
+<p>####删除学号在1003到1005之间的学生<br>&emsp;delete from tb_student where stuid&gt;=1003 and stuid&lt;=1005;<br>&emsp;delete from tb_student where stuid in (1003, 1004, 1005);<br>&emsp;delete from tb_student where stuid between 1003 and 1005;</p>
+<p>####更新学号为1002和1004的两个学生的生日<br>&emsp;update tb_student set stubirth=’1990-1-1’<br>&emsp;where stuid=1002 or stuid=1004;</p>
+<p>####更新学号为1002的学生的姓名、性别和家庭住址<br>&emsp;update tb_student set stuname=’王小美’, stusex=0, stuaddr=’四川自贡’ where stuid=1002;</p>
+<p>####更新家庭住址为null的学生的家庭住址<br>&emsp;update tb_student set stuaddr=’四川绵阳’<br>where stuaddr is null; </p>
+<p>####查询学生表的所有行所有列<br>&emsp;select * from tb_student;</p>
+<p>####筛选：查询女学生<br>&emsp;select * from tb_student where stusex=0;</p>
+<p>####投影：查询所有学生的姓名和生日<br>&emsp;select stuname, stubirth from tb_student;</p>
+<p>####查询女学生的姓名和生日<br>&emsp;select stuname, stubirth from tb_student where stusex=0;</p>
+<p>#-参考书目<br>&emsp;【1】入门书：MySQL必知必会<br>&emsp;【2】提高书：深入浅出MySQL</p>
 
             
             <p class="more">
-                <a href="http://yoursite.com/2018/12/24/git常用指令/">阅读剩下更多</a>
+                <a href="http://yoursite.com/2018/12/24/20181224/">阅读剩下更多</a>
             </p>
         </div>
         <div class="post-thumbnail" data-img="">
-            <a href="http://yoursite.com/2018/12/24/git常用指令/" title="git常用指令">
+            <a href="http://yoursite.com/2018/12/24/20181224/" title="20181024学习记录">
                 
                     <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/4.jpg" alt="默认配图">
                 
