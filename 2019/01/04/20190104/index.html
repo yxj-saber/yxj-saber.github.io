@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+    <meta name="baidu-site-verification" content="dIcXMeY8Ya">
+    
+    <title>20190104学习记录 | yxjsaber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="yxj-saber, python">
+    <meta name="description" content="yxj-saber个人博客">
+
+    
+    <link rel="alternative" href="/atom.xml" title="yxjsaber" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <!--[if lt IE 9]>
+    <script src="/js/html5.js"></script>
+    <![endif]-->
+    
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?fd459238242776d173cdc64918fb32f2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+</head>
+</html>
+<body class="home">
+    <!--[if lt IE 9]>
+    <div class="browsehappy">
+        当前网页 <strong>不支持</strong>
+        你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.
+    </div>
+    <![endif]-->
+
+    <!-- 博客头部 -->
+    <header class="header">
+    <section class="container header-main">
+        <div class="logo">
+            <a href="/">
+                <div class="cover">
+                    <span class="name">yxjsaber</span>
+                    <span class="description"></span>
+                </div>
+            </a>
+        </div>
+        <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
+        <ul class="menu hidden" id="JELON__menu">
+            
+            <li rel="/2019/01/04/20190104/index.html" class="item ">
+                <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
+            </li>
+            
+            <li rel="/2019/01/04/20190104/index.html" class="item ">
+                <a href="/lab/" title="实验室" class="icon-lab">&nbsp;实验室</a>
+            </li>
+            
+            <li rel="/2019/01/04/20190104/index.html" class="item ">
+                <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
+            </li>
+            
+            <li rel="/2019/01/04/20190104/index.html" class="item ">
+                <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
+            </li>
+            
+        </ul>
+        <div class="profile clearfix">
+            <div class="feeds fl">
+                
+                
+                <p class="links">
+                    
+                        <a href="https://github.com/yxj-saber" target="_blank">Github</a>
+                        |
+                    
+                        <a href="https://github.com/yxj-saber" target="_blank">Hosted by Coding Pages</a>
+                        
+                    
+                </p>
+                <p class="sns">
+                    
+                        <a href="https://github.com/yxj-saber" class="sinaweibo" target="_blank"><b>■</b> 新浪微博</a>
+                    
+                        <a href="https://github.com/yxj-saber" class="qqweibo" target="_blank"><b>■</b> Facebook</a>
+                    
+                    <a href="javascript: void(0);" class="wechat">
+                        <b>■</b>
+                        公众号
+                        <span class="popover">
+                            <img src="/img/wechat_mp.jpg" width="120" height="120" alt="我的微信订阅号">
+                            <i class="arrow"></i>
+                        </span>
+                    </a>
+                </p>
+                
+            </div>
+            <div class="avatar fr">
+                <img src="/img/jelon.jpg" alt="avatar" title="yxjsaber">
+            </div>
+        </div>
+    </section>
+</header>
+
+
+    <!-- 博客正文 -->
+    <div class="container body clearfix">
+        <section class="content">
+            <div class="content-main widget">
+                <!-- 文章页 -->
+<!-- 文章 -->
+<article class="post article">
+    <header class="text-center">
+        <h3 class="post-title"><span>20190104学习记录</span></h3>
+    </header>
+    <p class="post-meta text-center">
+        yxjsaber 发表于
+        <time datetime="2019-01-04T12:48:02.682Z">2019-01-04</time>
+    </p>
+    <div class="post-content">
+        <h3 id="1-模型"><a href="#1-模型" class="headerlink" title="1. 模型"></a>1. 模型</h3><ul>
+<li>一对一</li>
+<li>一对多</li>
+<li>多对多</li>
+</ul>
+<h3 id="2-模板"><a href="#2-模板" class="headerlink" title="2. 模板"></a>2. 模板</h3><ul>
+<li>解析模板文件的位置</li>
+<li>后端渲染模板</li>
+<li>前端渲染模板</li>
+</ul>
+<hr>
+<a id="more"></a>
+<h3 id="1-模型-1"><a href="#1-模型-1" class="headerlink" title="1. 模型"></a>1. 模型</h3><ul>
+<li><p>一对一</p>
+<p>学生表和学生扩展表的一对一关系</p>
+<p>定义学生扩展表模型，拥有编号、联系人电话、联系人名字3个字段，需要在该模型下添加一个stu字段（类型为OneToOneField）来表示和Student表的一对一关系，具体模型实现如下：</p>
+<p>on_delete参数的作用如下注释所示。</p>
+<p>relate_name的作用在于联表查询时用‘info’这个名字来替换这个模型的小写名字。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">StudentInfo</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">    s_no = models.CharField(max_length=<span class="number">10</span>, null=<span class="keyword">False</span>)</span><br><span class="line">    s_tel = models.CharField(max_length=<span class="number">11</span>, null=<span class="keyword">True</span>)</span><br><span class="line">    name = models.CharField(max_length=<span class="number">10</span>, null=<span class="keyword">True</span>)</span><br><span class="line">    <span class="comment"># 定义一对一的关联关系</span></span><br><span class="line">    <span class="comment"># on_delete: models.CASCADE - 允许删除主表信息，删除主表时，从表关联信息也将被删除</span></span><br><span class="line">    <span class="comment"># on_delete: models.PROTECT - 保护模式，删主表信息时，如果还有关联的从表信息，就不允许删除主表</span></span><br><span class="line">    <span class="comment"># on_delete: models.SET_NULL - 允许删除主表信息，删除主表时，设置从表关联信息的关联字段为空</span></span><br><span class="line">    stu = models.OneToOneField(Student, on_delete=models.CASCADE, related_name=<span class="string">'info'</span>)</span><br></pre></td></tr></table></figure>
+<p>一对一联表查询</p>
+<ul>
+<li><p>根据student表查询studentinfo表中的数据：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">def sel_phone_by_stu(request):</span><br><span class="line">    stu = Student.objects.filter(s_name=&apos;小明&apos;).first()</span><br><span class="line">    # stu_info = stu.studentinfo</span><br><span class="line">    stu_info = stu.info</span><br><span class="line">    s_tel = stu_info.s_tel</span><br><span class="line">    return HttpResponse(s_tel)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>根据studentinfo表查询student对象：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sel_stu_by_info</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="comment"># 1. 查询扩展表信息</span></span><br><span class="line">    stu_info = StudentInfo.objects.filter(s_no=<span class="string">'123456'</span>).first()</span><br><span class="line">    <span class="comment"># 2. 查询学生对象</span></span><br><span class="line">    stu1 = stu_info.stu</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(stu1)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>一对多</p>
+<p>学生表和班级表的多对一关系</p>
+<p>定义班级表模型，拥有g_name（班级名字）字段。一对多关系需要在多的一方添加外键约束，故需在Student模型中添加g字段的外键约束。</p>
+<ul>
+<li><p>创建Grade班级模型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Grade</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">    g_name = models.CharField(max_length=<span class="number">10</span>, unique=<span class="keyword">True</span>)</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        db_table = <span class="string">'tb_grade'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在Student模型中添加g字段的外键约束</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 一对多的外键定义，学生和班级是多对一关系，一个班级可以有多个学生</span></span><br><span class="line">g = models.ForeignKey(Grade, null=<span class="keyword">True</span>, on_delete=models.SET_NULL)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>创建班级</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_grade</span><span class="params">(request)</span>:</span></span><br><span class="line">    g_names = [<span class="string">'python1808'</span>, <span class="string">'javaEE1803'</span>, <span class="string">'HTML1805'</span>, <span class="string">'UI1809'</span>]</span><br><span class="line">    <span class="keyword">for</span> name <span class="keyword">in</span> g_names:</span><br><span class="line">        Grade.objects.create(g_name=name)</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">'创建班级成功'</span>)</span><br></pre></td></tr></table></figure>
+<p>给学生分配班级</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">stu_grade</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="comment"># 查询id=5的学生对象</span></span><br><span class="line">    stu = Student.objects.get(pk=<span class="number">5</span>)</span><br><span class="line">    <span class="comment"># 设置学生的班级字段</span></span><br><span class="line">    stu.g_id = <span class="number">1</span></span><br><span class="line">    stu.save()</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">'分配班级成功'</span>)</span><br></pre></td></tr></table></figure>
+<p>一对多联表查询</p>
+<ul>
+<li><p>根据学生信息查该学生的班级信息</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sel_grade_by_stu</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="comment"># 查询姓名叫做小明的学生对象</span></span><br><span class="line">    stu = Student.objects.filter(s_name=<span class="string">'小明'</span>).first()</span><br><span class="line">    grade = stu.g</span><br><span class="line">    <span class="comment"># grade是一个班级对象</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(grade.g_name)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>根据班级信息查该班级的学生信息</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">sel_stu_by_grade</span><span class="params">(request)</span>:</span></span><br><span class="line">    grade = Grade.objects.filter(g_name=<span class="string">'python1808'</span>).first()</span><br><span class="line">    <span class="comment"># 后面可以加.filter(条件)以及.all()等等</span></span><br><span class="line">    stus = grade.student_set.all()</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(stus)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>多对多</p>
+<p>学生表和课程表的多对多关系</p>
+<p>定义课程表模型，课程表拥有c_name（课程名字）字段，多对多需要一张中间表来实现，中间表和这两张表都是多对多关系，在django中多对多关系只需要在两个模型的其中一个中定义一个ManyToManyField类型的字段，在迁移到数据库的时候，会自动创建中间表。</p>
+<p>定义课程表模型和多对多类型字段如下：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Course</span><span class="params">(models.Model)</span>:</span></span><br><span class="line">    c_name = models.CharField(max_length=<span class="number">10</span>, unique=<span class="keyword">True</span>)</span><br><span class="line">    stu = models.ManyToManyField(Student, null=<span class="keyword">True</span>, related_name=<span class="string">'cou'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">Meta</span>:</span></span><br><span class="line">        db_table = <span class="string">'tb_course'</span></span><br></pre></td></tr></table></figure>
+<p>执行数据迁移后数据库的表结构如下：</p>
+<p>实际并未创建tb_course_stu的数据表，它是在执行数据迁移后自动生成的。</p>
+<p><img src="/2019/01/04/20190104/1546605211253.png" alt="1546605211253"></p>
+<p>添加课程表信息</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_course</span><span class="params">(request)</span>:</span></span><br><span class="line">    c_names = [<span class="string">'大学英语'</span>, <span class="string">'商务英语'</span>, <span class="string">'线性代数'</span>, <span class="string">'高等数学'</span>]</span><br><span class="line">    <span class="keyword">for</span> name <span class="keyword">in</span> c_names:</span><br><span class="line">        c = Course()</span><br><span class="line">        c.c_name = name</span><br><span class="line">        c.save()</span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">'创建课程成功'</span>)</span><br></pre></td></tr></table></figure>
+<p>添加中间表信息</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add_s_c</span><span class="params">(request)</span>:</span></span><br><span class="line">    <span class="comment"># 查询课程对象</span></span><br><span class="line">    cou = Course.objects.filter(c_name=<span class="string">'商务英语'</span>).first()</span><br><span class="line">    <span class="comment"># 查询学生对象</span></span><br><span class="line">    stu = Student.objects.filter(s_name=<span class="string">'骆昊'</span>).first()</span><br><span class="line">    <span class="comment"># 加入关联关系</span></span><br><span class="line">    stu.course_set.add(cou)</span><br><span class="line">    <span class="comment"># 以下两条也能添加中间表信息，但需要给stu加relate_name为stu或给cou加relate_name为cou方能如此添加</span></span><br><span class="line">    <span class="comment"># stu.cou.add(cou)</span></span><br><span class="line">    <span class="comment"># cou.stu.add(stu)</span></span><br><span class="line">    <span class="comment"># 删除中间表数据</span></span><br><span class="line">    <span class="comment"># stu.cou.remove(cou)</span></span><br><span class="line">    <span class="keyword">return</span> HttpResponse(<span class="string">'添加中间表信息成功'</span>)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-模板-1"><a href="#2-模板-1" class="headerlink" title="2. 模板"></a>2. 模板</h3><ul>
+<li><p>解析模板文件的位置</p>
+<p>在django项目的day03下创建名为templates的文件夹，在这个文件夹下创建index.html文件，创建之后，要能在工程中能访问这个文件夹及其下文件，需要在settings.py文件中解析该文件夹的位置。在settings.py的TEMPLATES中的‘DIRS’键中添加如下内容。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'DIRS'</span>: [os.path.join(BASE_DIR, <span class="string">'templates'</span>)],</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>后端渲染模板</p>
+<p>使用render()渲染模板，传递参数给模板。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">index</span><span class="params">(request)</span>:</span></span><br><span class="line">    stus = Student.objects.all()</span><br><span class="line">    <span class="keyword">return</span> render(request, <span class="string">'index.html'</span>, &#123;<span class="string">'a'</span>: stus&#125;)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>前端渲染数据</p>
+<ul>
+<li><p>解析变量 </p>
+</li>
+<li><p>解析标签，必须写结束标签</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">-- 解析变量 -- &#123;&#123; 变量名 &#125;&#125;</span><br><span class="line">-- 解析标签，必须写结束标签 -- &#123;% 标签名 %&#125;</span><br><span class="line">&#123;&#123; a &#125;&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line">    &#123;% for stu in a %&#125;</span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span></span><br><span class="line">        姓名： &#123;&#123; stu.s_name &#125;&#125;</span><br><span class="line">        年龄： &#123;&#123; stu.s_age &#125;&#125;</span><br><span class="line">        班级： &#123;&#123; stu.g.g_name &#125;&#125;</span><br><span class="line">        选课：</span><br><span class="line">            &#123;% for c in stu.cou.all %&#125;</span><br><span class="line">                &#123;&#123; c.c_name &#125;&#125;</span><br><span class="line">            &#123;% endfor %&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">    &#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+<p>解析上述函数传回的‘a’参数，并将其内容再解析到p标签中，以通过index页面去访问这些数据。</p>
+<p>最后效果如下所示：</p>
+<p><img src="/2019/01/04/20190104/1546605994355.png" alt="1546605994355"></p>
+</li>
+</ul>
+</li>
+</ul>
+
+    </div>
+    <p class="post-meta">
+        <span class="post-cat">分类：
+            <a class="cat-link" href="/categories/2019年1月/">2019年1月</a>
+        </span>
+        <span class="post-tags">
+            标签：
+            
+    
+        <a href="/tags/python/" title="python">python</a> / 
+    
+        <a href="/tags/Django/" title="Django">Django</a>
+    
+
+        </span>
+    </p>
+</article>
+<!-- 分享按钮 -->
+
+  <div class="article-share clearfix text-center">
+    <div class="share-area">
+      <span class="share-txt">分享到：</span>
+      <a href="javascript: window.open('http://service.weibo.com/share/share.php?url=' + encodeURIComponent(location.href) + '&title=' + document.title + '&language=zh_cn');" class="share-icon weibo"></a>
+      <a href="javascript: alert('请复制链接到微信并发送');" class="share-icon wechat"></a>
+      <a href="javascript: window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + encodeURIComponent(location.href) + '&title=' + document.title);" class="share-icon qqzone"></a>
+      <a href="javascript: window.open('http://connect.qq.com/widget/shareqq/index.html?url=' + encodeURIComponent(location.href) + '&desc=Jelon个人博客&title=' + document.title + '&callback=' + encodeURIComponent(location.href));" class="share-icon qq"></a>
+      <a href="javascript: window.open('http://shuo.douban.com/!service/share?href=' + encodeURIComponent(location.href) + '&name=' + document.title + '&text=' + document.title);" class="share-icon douban"></a>
+    </div>
+  </div>
+
+
+<!-- 上一篇/下一篇 -->
+
+<div class="article-nav clearfix">
+    
+    <span class="prev fl">
+        上一篇<br>
+        <a href="javascript: void(0);">没有上一篇了</a>
+    </span>
+    
+
+    
+    <span class="next fr">
+        下一篇<br>
+        <a href="/2019/01/03/20190103/">
+            
+                20190103学习记录
+            
+        </a>
+    </span>
+    
+</div>
+
+<!-- 文章评论 -->
+
+
+
+            </div>
+
+        </section>
+        <!-- 侧栏部分 -->
+<aside class="sidebar">
+    <section class="widget">
+        <h3 class="widget-hd"><strong>文章分类</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+    <li>
+        <a href="/categories/2018年12月/">2018年12月</a>
+        <span class="badge">(6)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/2019年1月/">2019年1月</a>
+        <span class="badge">(3)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/nginx/">nginx</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/git/">git</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+</ul>
+    </section>
+
+    
+    <section class="widget">
+        <h3 class="widget-hd"><strong>热门标签</strong></h3>
+        <!-- 文章标签 -->
+<div class="widget-bd tag-wrap">
+  
+    <a class="tag-item" href="/tags/数据库/" title="数据库">数据库 (4)</a>
+  
+    <a class="tag-item" href="/tags/MySQL/" title="MySQL">MySQL (3)</a>
+  
+    <a class="tag-item" href="/tags/python/" title="python">python (7)</a>
+  
+    <a class="tag-item" href="/tags/Redis/" title="Redis">Redis (2)</a>
+  
+    <a class="tag-item" href="/tags/Django/" title="Django">Django (4)</a>
+  
+    <a class="tag-item" href="/tags/django/" title="django">django (0)</a>
+  
+    <a class="tag-item" href="/tags/linux/" title="linux">linux (3)</a>
+  
+    <a class="tag-item" href="/tags/Web前端/" title="Web前端">Web前端 (1)</a>
+  
+    <a class="tag-item" href="/tags/nginx/" title="nginx">nginx (1)</a>
+  
+    <a class="tag-item" href="/tags/git/" title="git">git (1)</a>
+  
+</div>
+    </section>
+    
+
+    
+
+    
+    <!-- 友情链接 -->
+    <section class="widget">
+        <h3 class="widget-hd"><strong>友情链接</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+        <li>
+            <a href="https://yxj-saber.github.io" target="_blank" title="yxj-saber个人博客">yxj-saber博客</a>
+        </li>
+    
+        <li>
+            <a href="https://www.baidu.com" target="_blank" title="百度搜索">百度搜索</a>
+        </li>
+    
+</ul>
+    </section>
+    
+</aside>
+<!-- / 侧栏部分 -->
+    </div>
+
+    <!-- 博客底部 -->
+    <footer class="footer">
+    &copy;
+    
+        2018-2019
+    
+
+    <a href="/">yxjsaber Loves You</a>
+</footer>
+<div class="back-to-top" id="JELON__backToTop" title="返回顶部">返回顶部</div>
+
+    <!--博客js脚本 -->
+    <!-- 这里放网站js脚本 -->
+<script src="/js/main.js"></script>
+</body>
+</html>
