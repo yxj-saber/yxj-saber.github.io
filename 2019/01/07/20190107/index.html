@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+    <meta name="baidu-site-verification" content="dIcXMeY8Ya">
+    
+    <title>20190107学习记录 | yxjsaber</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="keywords" content="yxj-saber, python">
+    <meta name="description" content="yxj-saber个人博客">
+
+    
+    <link rel="alternative" href="/atom.xml" title="yxjsaber" type="application/atom+xml">
+    
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <!--[if lt IE 9]>
+    <script src="/js/html5.js"></script>
+    <![endif]-->
+    
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?fd459238242776d173cdc64918fb32f2";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+</head>
+</html>
+<body class="home">
+    <!--[if lt IE 9]>
+    <div class="browsehappy">
+        当前网页 <strong>不支持</strong>
+        你正在使用的浏览器. 为了正常的访问, 请 <a href="http://browsehappy.com/">升级你的浏览器</a>.
+    </div>
+    <![endif]-->
+
+    <!-- 博客头部 -->
+    <header class="header">
+    <section class="container header-main">
+        <div class="logo">
+            <a href="/">
+                <div class="cover">
+                    <span class="name">yxjsaber</span>
+                    <span class="description"></span>
+                </div>
+            </a>
+        </div>
+        <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
+        <ul class="menu hidden" id="JELON__menu">
+            
+            <li rel="/2019/01/07/20190107/index.html" class="item ">
+                <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
+            </li>
+            
+            <li rel="/2019/01/07/20190107/index.html" class="item ">
+                <a href="/lab/" title="实验室" class="icon-lab">&nbsp;实验室</a>
+            </li>
+            
+            <li rel="/2019/01/07/20190107/index.html" class="item ">
+                <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
+            </li>
+            
+            <li rel="/2019/01/07/20190107/index.html" class="item ">
+                <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
+            </li>
+            
+        </ul>
+        <div class="profile clearfix">
+            <div class="feeds fl">
+                
+                
+                <p class="links">
+                    
+                        <a href="https://github.com/yxj-saber" target="_blank">Github</a>
+                        |
+                    
+                        <a href="https://github.com/yxj-saber" target="_blank">Hosted by Coding Pages</a>
+                        
+                    
+                </p>
+                <p class="sns">
+                    
+                        <a href="https://github.com/yxj-saber" class="sinaweibo" target="_blank"><b>■</b> 新浪微博</a>
+                    
+                        <a href="https://github.com/yxj-saber" class="qqweibo" target="_blank"><b>■</b> Facebook</a>
+                    
+                    <a href="javascript: void(0);" class="wechat">
+                        <b>■</b>
+                        公众号
+                        <span class="popover">
+                            <img src="/img/wechat_mp.jpg" width="120" height="120" alt="我的微信订阅号">
+                            <i class="arrow"></i>
+                        </span>
+                    </a>
+                </p>
+                
+            </div>
+            <div class="avatar fr">
+                <img src="/img/jelon.jpg" alt="avatar" title="yxjsaber">
+            </div>
+        </div>
+    </section>
+</header>
+
+
+    <!-- 博客正文 -->
+    <div class="container body clearfix">
+        <section class="content">
+            <div class="content-main widget">
+                <!-- 文章页 -->
+<!-- 文章 -->
+<article class="post article">
+    <header class="text-center">
+        <h3 class="post-title"><span>20190107学习记录</span></h3>
+    </header>
+    <p class="post-meta text-center">
+        yxjsaber 发表于
+        <time datetime="2019-01-07T11:17:43.187Z">2019-01-07</time>
+    </p>
+    <div class="post-content">
+        <h3 id="1-模板"><a href="#1-模板" class="headerlink" title="1 模板"></a>1 模板</h3><h4 id="1-1-静态文件配置"><a href="#1-1-静态文件配置" class="headerlink" title="1.1 静态文件配置"></a>1.1 静态文件配置</h4><ul>
+<li>加载静态配置文件</li>
+<li>使用金泰配置文件</li>
+</ul>
+<h4 id="1-2-模板摘要"><a href="#1-2-模板摘要" class="headerlink" title="1.2 模板摘要"></a>1.2 模板摘要</h4><ul>
+<li>模板内容</li>
+<li>模板中逻辑运算符，if、ifequal、forloop、for empty等</li>
+<li>父模板中定义block块和子模板中继承与调用父模板中block块</li>
+<li>模板中注解，注解代码的可见与不可见，三种注解的区别</li>
+<li>模板中定义修饰变量的过滤器，使用管道符‘|’，以及Django中过滤器的自定义</li>
+<li>模板继承</li>
+</ul>
+<h3 id="2-路由"><a href="#2-路由" class="headerlink" title="2 路由"></a>2 路由</h3><h4 id="2-1-url配置"><a href="#2-1-url配置" class="headerlink" title="2.1 url配置"></a>2.1 url配置</h4><ul>
+<li>配置流程</li>
+<li>urlpatterns</li>
+<li>导入其他的url配置</li>
+</ul>
+<h4 id="2-2-获取url路径的参数"><a href="#2-2-获取url路径的参数" class="headerlink" title="2.2 获取url路径的参数"></a>2.2 获取url路径的参数</h4><ul>
+<li>url传递一个参数</li>
+<li>url传递多个参数</li>
+<li>使用关键字获取参数</li>
+</ul>
+<hr>
+<a id="more"></a>
+<h3 id="1-模板-1"><a href="#1-模板-1" class="headerlink" title="1 模板"></a>1 模板</h3><h4 id="1-1-静态文件配置-1"><a href="#1-1-静态文件配置-1" class="headerlink" title="1.1 静态文件配置"></a>1.1 静态文件配置</h4><ul>
+<li><p>加载静态配置文件</p>
+<p>在settings.py中最底下有一个叫做static的文件夹，主要用来加载一些模板用到的资源，提供给全局使用。这个静态文件主要用来配置css，html，image，文字文件等。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">STATIC_URL = ‘/static/’</span><br><span class="line">STATICFILES_DIRS = [</span><br><span class="line">    os.path.join(BASE_DIR, ‘static’)</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<p>之后在模板中，首先加载静态文件，就不用写绝对全路径了。</p>
+</li>
+<li><p>使用静态配置文件</p>
+<ul>
+<li><p>加载渲染静态配置文件模板中声明</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% load static %&#125; 或者 &#123;% load staticfiles %&#125;</span><br></pre></td></tr></table></figure>
+<p>在引用资源的时候用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% static ‘xxx’ %&#125; xxx就是相当于staticfiles_dirs的一个位置</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>直接定义静态配置</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"/static/images/mvc.png"</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>static文件夹下有一个images文件夹，下面有一个mvc.png的图片。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="1-2-模板摘要-1"><a href="#1-2-模板摘要-1" class="headerlink" title="1.2 模板摘要"></a>1.2 模板摘要</h4><ul>
+<li><p>模板内容</p>
+<p>HTML静态代码</p>
+<p>动态插入的代码段，也就是block块</p>
+</li>
+<li><p>模板中逻辑运算符，if、ifequal、forloop、for empty等</p>
+<ul>
+<li><p>if</p>
+<p>格式1：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if 表达式 %&#125;</span><br><span class="line">&#123;%  endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>格式2：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if表达式 %&#125;</span><br><span class="line">&#123;% else %&#125;</span><br><span class="line">&#123;%  endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>格式3：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% if表达式 %&#125;</span><br><span class="line">&#123;% elif 表达式 %&#125;</span><br><span class="line">&#123;%  endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>ifequal: 判断2个值是否相等，相等则执行其后的代码</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% ifequal 值1 值2 %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>for</p>
+<p>格式：</p>
+<p>注：当序列为空是，会执行empty后面的语句</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% for 变量 in 列表 %&#125;</span><br><span class="line">&#123;% empty %&#125;</span><br><span class="line">&#123;% endfor %&#125;</span><br></pre></td></tr></table></figure>
+<p>其他相关用法：</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123; forloop.counter &#125;&#125; 表示当前是第几次循环，从1开始</span><br><span class="line">&#123;&#123; forloop.counter0 &#125;&#125; 表示当前从第几次循环，从0开始</span><br><span class="line">&#123;&#123;forloop.revcounter&#125;&#125;表示当前是第几次循环，倒着数数，到1停</span><br><span class="line">&#123;&#123;forloop.revcounter0&#125;&#125;表示当前是第几次循环，倒着数数，到0停</span><br><span class="line">&#123;&#123;forloop.first&#125;&#125;是否是第一个      返回布尔值</span><br><span class="line">&#123;&#123;forloop.last&#125;&#125;是否是最后一个      返回布尔值</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>父模板中定义block块和子模板中继承与调用父模板中block块</p>
+<ul>
+<li><p>block</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">block 块</span><br><span class="line">&#123;% block xxx %&#125;</span><br><span class="line">&#123;% endblock %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>extends</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">extends 继承，写在开头位置</span><br><span class="line">&#123;% extends ‘父模板路径’ %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>include</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">include 加载模型进行渲染</span><br><span class="line">&#123;% include ‘模板文件’ %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>模板中注解，注解代码的可见与不可见，三种注解的区别</p>
+<ul>
+<li><p>注释可见，可运行</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--注释内容--&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>单行注释不可见，不可运行</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;# 注释内容 #&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>多行注释不可见，不可运行</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% comment %&#125;</span><br><span class="line">	注释内容</span><br><span class="line">&#123;% endcomment %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>模板中定义修饰变量的过滤器，使用管道符‘|’，以及Django中内建过滤器</p>
+<p>案列</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--1. 字符串‘Python’转化为大写,输出结果为：PYTHON--&gt;</span></span><br><span class="line">&#123;&#123; 'Python'|upper &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--2. 字符串‘PYTHON’转化为小写,输出结果为：python--&gt;</span></span><br><span class="line">&#123;&#123; 'PYTHON'|lower &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--3. 变量3增加4,输出结果为：7--&gt;</span></span><br><span class="line">&#123;&#123; 3|add:'4' &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--4. 第一个字符转化成大写形式,输出结果为：Python--&gt;</span></span><br><span class="line">&#123;&#123; 'python'|capfirst &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--5. 删除指定符号的值,输出结果为：studypythonisveryhappy --&gt;</span></span><br><span class="line">&#123;&#123; 'study python is very happy'|cut:' ' &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--6. 输出缺省值,输出结果为：nothing--&gt;</span></span><br><span class="line">&#123;&#123; ''|default:'nothing' &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--7. 返回第一个元素,输出结果为：p--&gt;</span></span><br><span class="line">&#123;&#123; 'python'|first &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--8. 返回最后一个元素,输出结果为：n--&gt;</span></span><br><span class="line">&#123;&#123; 'python'|last &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--9. 计算长度,输出结果为：6--&gt;</span></span><br><span class="line">&#123;&#123; 'python'|length &#125;&#125;</span><br><span class="line"><span class="comment">&lt;!--10. 随机一个元素,输出随机结果为：y--&gt;</span></span><br><span class="line">&#123;&#123; 'python'|random &#125;&#125;</span><br></pre></td></tr></table></figure>
+<p>django内建过滤器大全</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">1、add ：将value的值增加2。使用形式为：&#123;&#123; value | add: "2"&#125;&#125;。</span><br><span class="line">2、addslashes：在value中的引号前增加反斜线。使用形式为：&#123;&#123; value | addslashes &#125;&#125;。</span><br><span class="line">3、capfirst：value的第一个字符转化成大写形式。使用形式为：&#123;&#123; value | capfirst &#125;&#125;。</span><br><span class="line">4、cut：从给定value中删除所有arg的值。使用形式为：&#123;&#123; value | cut:arg&#125;&#125;。</span><br><span class="line">5、date: 格式化时间格式。使用形式为：&#123;&#123; value | date:"Y-m-d H:M:S" &#125;&#125;</span><br><span class="line">6、default：如果value是False，那么输出使用缺省值。使用形式：&#123;&#123; value | default: "nothing" &#125;&#125;。例如，如果value是“”，那么输出将是nothing</span><br><span class="line">7、default_if_none：如果value是None，那么输出将使用缺省值。使用形式：&#123;&#123; value | default_if_none:"nothing" &#125;&#125;，例如，如果value是None，那么输出将是nothing</span><br><span class="line">8、dictsort：如果value的值是一个字典，那么返回值是按照关键字排序的结果</span><br><span class="line">使用形式：&#123;&#123; value | dictsort:"name"&#125;&#125;，例如，</span><br><span class="line">如果value是：</span><br><span class="line">[&#123;'name': 'python'&#125;,&#123;'name': 'java'&#125;,&#123;'name': 'c++'&#125;,]</span><br><span class="line">那么，输出是：</span><br><span class="line">[&#123;'name': 'c++'&#125;,&#123;'name': 'java'&#125;,&#123;'name': 'python'&#125;, ]</span><br><span class="line">9、dictsortreversed：如果value的值是一个字典，那么返回值是按照关键字排序的结果的反序。使用形式：与dictsort过滤器相同。</span><br><span class="line">10、divisibleby：如果value能够被arg整除，那么返回值将是True。使用形式：&#123;&#123; value | divisibleby:arg&#125;&#125;，如果value是9，arg是3，那么输出将是True</span><br><span class="line">11、escape：替换value中的某些字符，以适应HTML格式。使用形式：&#123;&#123; value | escape&#125;&#125;。例如，<span class="tag">&lt; 转化为 &amp;<span class="attr">lt</span>;&gt;</span> 转化为 &amp;gt;' 转化为  &amp;#39;" 转化为  &amp;quot;</span><br><span class="line">13、filesizeformat：格式化value，使其成为易读的文件大小。使用形式：&#123;&#123; value | filesizeformat &#125;&#125;。例如：13KB，4.1MB等。</span><br><span class="line">14、first：返回列表/字符串中的第一个元素。使用形式：&#123;&#123; value | first &#125;&#125;</span><br><span class="line">16、iriencode：如果value中有非ASCII字符，那么将其进行转化成URL中适合的编码，如果value已经进行过URLENCODE，改操作就不会再起作用。使用形式：&#123;&#123;value | iriencode&#125;&#125;</span><br><span class="line">17、join：使用指定的字符串连接一个list，作用如同python的str.join(list)。使用形式：&#123;&#123; value | join:"arg"&#125;&#125;，如果value是['a','b','c']，arg是'//'那么输出是a//b//c</span><br><span class="line">18、last：返回列表/字符串中的最后一个元素。使用形式：&#123;&#123; value | last &#125;&#125;</span><br><span class="line">19、length：返回value的长度。使用形式：&#123;&#123; value | length &#125;&#125;</span><br><span class="line">20、length_is：如果value的长度等于arg的时候返回True。使用形式：&#123;&#123; value | length_is:"arg"&#125;&#125;。例如：如果value是['a','b','c']，arg是3，那么返回True</span><br><span class="line">21、linebreaks：value中的"\n"将被<span class="tag">&lt;<span class="name">br</span>/&gt;</span>替代，并且整个value使用<span class="tag">&lt;/<span class="name">p</span>&gt;</span>包围起来。使用形式：&#123;&#123;value|linebreaks&#125;&#125;</span><br><span class="line">22、linebreaksbr：value中的"\n"将被<span class="tag">&lt;<span class="name">br</span>/&gt;</span>替代。使用形式：&#123;&#123;value |linebreaksbr&#125;&#125;</span><br><span class="line">23、linenumbers：显示的文本，带有行数。使用形式：&#123;&#123;value | linenumbers&#125;&#125;</span><br><span class="line">24、ljust：在一个给定宽度的字段中，左对齐显示value。使用形式：&#123;&#123;value | ljust&#125;&#125;</span><br><span class="line">25、center：在一个给定宽度的字段中，中心对齐显示value。使用形式：&#123;&#123;value | center&#125;&#125;</span><br><span class="line">26、rjust：：在一个给定宽度的字段中，右对齐显示value。使用形式：&#123;&#123;value | rjust&#125;&#125;</span><br><span class="line">27、lower：将一个字符串转换成小写形式。使用形式：&#123;&#123;value | lower&#125;&#125;</span><br><span class="line">30、random：从给定的list中返回一个任意的Item。使用形式：&#123;&#123;value | random&#125;&#125;</span><br><span class="line">31、removetags：删除value中tag1,tag2....的标签。使用形式：&#123;&#123;value | removetags:"tag1 tag2 tag3..."&#125;&#125;</span><br><span class="line">32、safe：当系统设置autoescaping打开的时候，该过滤器使得输出不进行escape转换。使用形式：&#123;&#123;value | safe&#125;&#125;</span><br><span class="line">33、safeseq：与safe基本相同，但有一点不同的就是：safe是针对字符串，而safeseq是针对多个字符串组成的sequence</span><br><span class="line">34、slice：与python语法中的slice相同。使用形式：&#123;&#123;some_list | slice:"2"&#125;&#125;</span><br><span class="line">37、striptags：删除value中的所有HTML标签.使用形式：&#123;&#123;value | striptags&#125;&#125;</span><br><span class="line">38、time：格式化时间输出。使用形式：&#123;&#123;value | time:"H:i"&#125;&#125;或者&#123;&#123;value | time&#125;&#125;</span><br><span class="line">39、title：转换一个字符串成为title格式。</span><br><span class="line">40、truncatewords：将value切成truncatewords指定的单词数目。使用形式：&#123;&#123;value | truncatewords:2&#125;&#125;。例如，如果value是Joel is a slug 那么输出将是：Joel is ...</span><br><span class="line">42、upper：转换一个字符串为大写形式</span><br><span class="line">43、urlencode：将一个字符串进行URLEncode</span><br><span class="line">46、wordcount：返回字符串中单词的数目</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2-路由-1"><a href="#2-路由-1" class="headerlink" title="2 路由"></a>2 路由</h3><h4 id="2-1-url配置-1"><a href="#2-1-url配置-1" class="headerlink" title="2.1 url配置"></a>2.1 url配置</h4><ul>
+<li><p>配置流程</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">settings中指定根级url配置文件，对应的属性ROOT_URLCONF</span><br><span class="line">ROOT_URLCONF = <span class="string">'day04.urls'</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>urlpatterns</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">一个url实例的对象</span><br><span class="line">urlpatterns = [</span><br><span class="line">    path(<span class="string">'admin/'</span>, admin.site.urls),</span><br><span class="line"></span><br><span class="line">    path(<span class="string">'app/'</span>, include(<span class="string">'app.urls'</span>)),</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>导入其他的url配置</p>
+<p>在名为app的应用中创建urls.py的文件，编写配置规则，在工程urls.py中进行导入，如上所示。</p>
+</li>
+</ul>
+<h4 id="2-2-获取url路径的参数-1"><a href="#2-2-获取url路径的参数-1" class="headerlink" title="2.2 获取url路径的参数"></a>2.2 获取url路径的参数</h4><ul>
+<li><p>url传递一个参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 匹配url：localhost/app/name/[任意字符串]，并获取该字符串</span></span><br><span class="line">path(<span class="string">'name/&lt;str:name&gt;/'</span>, views.get_name)</span><br><span class="line"><span class="comment"># 功能同上的正则表达式写法，r表示字符串不转义</span></span><br><span class="line">re_path(<span class="string">r'name/.+/'</span>, views.get_name)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>url传递多个参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 接收多个参数</span></span><br><span class="line">path(<span class="string">'params/&lt;int:year&gt;/&lt;int:mouth&gt;/&lt;int:day&gt;/'</span>, views.params)</span><br><span class="line"><span class="comment"># 功能同上的正则写法， 并且接收参数时和顺序有关系</span></span><br><span class="line">re_path(<span class="string">r'params/(\d+)/(\d+)/(\d+)/'</span>, views.params)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>使用关键字获取参数</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 功能同上，接收参数时和参数的位置没有关系</span></span><br><span class="line">re_path(<span class="string">r'params/(?P&lt;year&gt;\d+)/(?P&lt;mouth&gt;\d+)/(?P&lt;day&gt;\d+)/'</span>, views.params)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+    </div>
+    <p class="post-meta">
+        <span class="post-cat">分类：
+            <a class="cat-link" href="/categories/2019年1月/">2019年1月</a>
+        </span>
+        <span class="post-tags">
+            标签：
+            
+    
+        <a href="/tags/python/" title="python">python</a> / 
+    
+        <a href="/tags/Django/" title="Django">Django</a>
+    
+
+        </span>
+    </p>
+</article>
+<!-- 分享按钮 -->
+
+  <div class="article-share clearfix text-center">
+    <div class="share-area">
+      <span class="share-txt">分享到：</span>
+      <a href="javascript: window.open('http://service.weibo.com/share/share.php?url=' + encodeURIComponent(location.href) + '&title=' + document.title + '&language=zh_cn');" class="share-icon weibo"></a>
+      <a href="javascript: alert('请复制链接到微信并发送');" class="share-icon wechat"></a>
+      <a href="javascript: window.open('http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=' + encodeURIComponent(location.href) + '&title=' + document.title);" class="share-icon qqzone"></a>
+      <a href="javascript: window.open('http://connect.qq.com/widget/shareqq/index.html?url=' + encodeURIComponent(location.href) + '&desc=Jelon个人博客&title=' + document.title + '&callback=' + encodeURIComponent(location.href));" class="share-icon qq"></a>
+      <a href="javascript: window.open('http://shuo.douban.com/!service/share?href=' + encodeURIComponent(location.href) + '&name=' + document.title + '&text=' + document.title);" class="share-icon douban"></a>
+    </div>
+  </div>
+
+
+<!-- 上一篇/下一篇 -->
+
+<div class="article-nav clearfix">
+    
+    <span class="prev fl">
+        上一篇<br>
+        <a href="javascript: void(0);">没有上一篇了</a>
+    </span>
+    
+
+    
+    <span class="next fr">
+        下一篇<br>
+        <a href="/2019/01/04/20190104/">
+            
+                20190104学习记录
+            
+        </a>
+    </span>
+    
+</div>
+
+<!-- 文章评论 -->
+
+
+
+            </div>
+
+        </section>
+        <!-- 侧栏部分 -->
+<aside class="sidebar">
+    <section class="widget">
+        <h3 class="widget-hd"><strong>文章分类</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+    <li>
+        <a href="/categories/2018年12月/">2018年12月</a>
+        <span class="badge">(6)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/2019年1月/">2019年1月</a>
+        <span class="badge">(4)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/nginx/">nginx</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+    <li>
+        <a href="/categories/git/">git</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+</ul>
+    </section>
+
+    
+    <section class="widget">
+        <h3 class="widget-hd"><strong>热门标签</strong></h3>
+        <!-- 文章标签 -->
+<div class="widget-bd tag-wrap">
+  
+    <a class="tag-item" href="/tags/数据库/" title="数据库">数据库 (4)</a>
+  
+    <a class="tag-item" href="/tags/MySQL/" title="MySQL">MySQL (3)</a>
+  
+    <a class="tag-item" href="/tags/python/" title="python">python (8)</a>
+  
+    <a class="tag-item" href="/tags/Redis/" title="Redis">Redis (2)</a>
+  
+    <a class="tag-item" href="/tags/Django/" title="Django">Django (5)</a>
+  
+    <a class="tag-item" href="/tags/linux/" title="linux">linux (3)</a>
+  
+    <a class="tag-item" href="/tags/Web前端/" title="Web前端">Web前端 (1)</a>
+  
+    <a class="tag-item" href="/tags/nginx/" title="nginx">nginx (1)</a>
+  
+    <a class="tag-item" href="/tags/git/" title="git">git (1)</a>
+  
+</div>
+    </section>
+    
+
+    
+
+    
+    <!-- 友情链接 -->
+    <section class="widget">
+        <h3 class="widget-hd"><strong>友情链接</strong></h3>
+        <!-- 文章分类 -->
+<ul class="widget-bd">
+    
+        <li>
+            <a href="https://yxj-saber.github.io" target="_blank" title="yxj-saber个人博客">yxj-saber博客</a>
+        </li>
+    
+        <li>
+            <a href="https://www.baidu.com" target="_blank" title="百度搜索">百度搜索</a>
+        </li>
+    
+</ul>
+    </section>
+    
+</aside>
+<!-- / 侧栏部分 -->
+    </div>
+
+    <!-- 博客底部 -->
+    <footer class="footer">
+    &copy;
+    
+        2018-2019
+    
+
+    <a href="/">yxjsaber Loves You</a>
+</footer>
+<div class="back-to-top" id="JELON__backToTop" title="返回顶部">返回顶部</div>
+
+    <!--博客js脚本 -->
+    <!-- 这里放网站js脚本 -->
+<script src="/js/main.js"></script>
+</body>
+</html>
