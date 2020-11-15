@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
     <meta name="baidu-site-verification" content="dIcXMeY8Ya">
     
-    <title>hexo+git+github搭建博客 | yxjsaber</title>
+    <title>少年游和雨霖铃 | yxjsaber</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="keywords" content="yxj-saber, python">
     <meta name="description" content="yxj-saber个人博客">
@@ -56,19 +56,19 @@
         <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
         <ul class="menu hidden" id="JELON__menu">
             
-            <li rel="/2019/01/21/20190121/index.html" class="item ">
+            <li rel="/2020/11/15/少年游和雨霖铃/index.html" class="item ">
                 <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
             </li>
             
-            <li rel="/2019/01/21/20190121/index.html" class="item ">
+            <li rel="/2020/11/15/少年游和雨霖铃/index.html" class="item ">
                 <a href="/lab/" title="实验室" class="icon-lab">&nbsp;实验室</a>
             </li>
             
-            <li rel="/2019/01/21/20190121/index.html" class="item ">
+            <li rel="/2020/11/15/少年游和雨霖铃/index.html" class="item ">
                 <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
             </li>
             
-            <li rel="/2019/01/21/20190121/index.html" class="item ">
+            <li rel="/2020/11/15/少年游和雨霖铃/index.html" class="item ">
                 <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
             </li>
             
@@ -119,76 +119,30 @@
 <!-- 文章 -->
 <article class="post article">
     <header class="text-center">
-        <h3 class="post-title"><span>hexo+git+github搭建博客</span></h3>
+        <h3 class="post-title"><span>少年游和雨霖铃</span></h3>
     </header>
     <p class="post-meta text-center">
         yxjsaber 发表于
-        <time datetime="2019-01-21T11:07:21.367Z">2019-01-21</time>
+        <time datetime="2020-11-15T12:44:00.000Z">2020-11-15</time>
     </p>
     <div class="post-content">
-        <h2 id="hexo-github-git-搭建个人博客"><a href="#hexo-github-git-搭建个人博客" class="headerlink" title="hexo + github + git 搭建个人博客"></a>hexo + github + git 搭建个人博客</h2><h3 id="1-安装配置git"><a href="#1-安装配置git" class="headerlink" title="1. 安装配置git"></a>1. 安装配置git</h3><h3 id="2-安装配置Node-js"><a href="#2-安装配置Node-js" class="headerlink" title="2. 安装配置Node.js"></a>2. 安装配置Node.js</h3><h3 id="3-在github上注册一个仓库"><a href="#3-在github上注册一个仓库" class="headerlink" title="3. 在github上注册一个仓库"></a>3. 在github上注册一个仓库</h3><h3 id="4-hexo的下载和安装"><a href="#4-hexo的下载和安装" class="headerlink" title="4. hexo的下载和安装"></a>4. hexo的下载和安装</h3><h3 id="5-部分报错"><a href="#5-部分报错" class="headerlink" title="5. 部分报错"></a>5. 部分报错</h3><hr>
-<h3 id="1-安装配置git-1"><a href="#1-安装配置git-1" class="headerlink" title="1. 安装配置git"></a>1. 安装配置git</h3><p>​    Windows：下载并安装<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a></p>
-<h3 id="2-安装配置Node-js-1"><a href="#2-安装配置Node-js-1" class="headerlink" title="2. 安装配置Node.js"></a>2. 安装配置Node.js</h3><p>​    安装Node.js的最佳方式是使用nvm</p>
-<p>​    cURL:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh</span><br></pre></td></tr></table></figure>
-<p>​    Wget:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh</span><br></pre></td></tr></table></figure>
-<p>​    安装完成后，重启终端并执行下列命令即可安装Node.js</p>
-<p>​    Windows下上述安装方式可能存在问题，也可以下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装程序</a>来安装</p>
-<h3 id="3-在github上注册一个仓库-1"><a href="#3-在github上注册一个仓库-1" class="headerlink" title="3. 在github上注册一个仓库"></a>3. 在github上注册一个仓库</h3><ul>
-<li>新建一个名为 你的用户名.github.io 的仓库，比如说，如果你的github用户名是test，那么你就新建test.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> 了， 每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。 </li>
-<li>几个注意的地方： <ul>
-<li>注册的邮箱一定要验证，否则不会成功； </li>
-<li>仓库名字必须是：username.github.io，其中username是你的用户名； </li>
-<li>创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里啦</li>
-</ul>
-</li>
-</ul>
-<h3 id="4-hexo的下载和安装-1"><a href="#4-hexo的下载和安装-1" class="headerlink" title="4. hexo的下载和安装"></a>4. hexo的下载和安装</h3><ul>
-<li><p>利用npm命令下载安装hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建博客文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># &lt;folder&gt;整体表示一个文件夹</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>_config.yml</p>
-<p>配置githun仓库的相关信息到hexo配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@***.github.com:***/***.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p><img src="/2019/01/21/20190121/1548070120472.png" alt="1548070120472"></p>
-<p>在_config.yml的最后添加如下信息，repo是在github上创建的仓库的ssh地址，形如上述代码块的模式。</p>
-</li>
-<li><p>部署到github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在浏览器中输入<a href="https://username.github.io即可访问博客所在网站" target="_blank" rel="noopener">https://username.github.io即可访问博客所在网站</a></p>
-</li>
-</ul>
-<h3 id="5-部分报错-1"><a href="#5-部分报错-1" class="headerlink" title="5. 部分报错"></a>5. 部分报错</h3><ul>
-<li><p>找不到git部署 Error Deployer not found: git</p>
-<p>解决方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部署类型设置为git</p>
-<p>hexo 3.0 部署类型不再是github，_config.yml中修改</p>
-</li>
-</ul>
-<h3 id="6-其他问题"><a href="#6-其他问题" class="headerlink" title="6. 其他问题"></a>6. 其他问题</h3><p>​    主题更换，文章编辑，域名绑定等相关问题不作说明，请自行参考其他资料解决。</p>
-<p>​    <a href="https://hexo.bootcss.com/docs/index.html" target="_blank" rel="noopener">一个详细的搭建教程——可参考</a></p>
+        <p><center>少年游·周邦彦</center><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">并刀如水，吴盐胜雪，纤手破新橙。锦幄初温，兽香不断，相对坐调笙。</span><br><span class="line">低声问，向谁行宿？城上已三更。马滑露浓，不如休去，直是少人行。</span><br></pre></td></tr></table></figure></p>
+<p><center>雨霖铃·柳永</center><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">寒蝉凄切，对长亭晚，骤雨初歇。都门帐饮无绪，留恋处，兰舟催发。执手相看泪眼，</span><br><span class="line">竟无语凝噎。念去去，千里烟波，暮霭沉沉楚天阔。</span><br><span class="line">多情自古伤离别，更那堪，冷落清秋节！今宵酒醒何处？杨柳岸，晓风残月，此去经</span><br><span class="line">年，应是良辰好景虚设。便纵有千种风情，更与何人说？</span><br></pre></td></tr></table></figure></p>
+<p>​        昨天b站听了戴建业老师的课，讲这两首词，也来说说感受，顺便记录一下，第二首本来就会背，第一首打了一遍基本也能背了。</p>
+<p>​        第一首很简单，暧昧的气氛很浓，不用解释大概都知道是什么意思，表达的是什么感情。为什么吃橙蘸盐，然后特地去了解了一下，其实就和现在吃菠萝要先用盐水泡一段时间是一样的，主要是中和里面的有机酸，避免吃的时候有涩味。</p>
+<p>​        第二首高中学过，但听戴老师讲来，又有一番别的感觉，听着就很有画面感。可能我高中没有认真听课，这次听才注意到这首词前后的呼应关系，真的是逻辑挺严密的。</p>
+<p>​        “新诗”有惊艳的描写和感情，“旧诗”有未曾注意的细节或新的感受。学习学习，学而时习，今天捡起我许久不写的博客，用此篇随记开头，以后坚持每天至少一篇，自己监督自己，应该不会监守自盗的吧，哈哈哈！</p>
 
     </div>
     <p class="post-meta">
         <span class="post-cat">分类：
-            <a class="cat-link" href="/categories/web/">web</a>
+            <a class="cat-link" href="/categories/杂谈/">杂谈</a>
         </span>
         <span class="post-tags">
             标签：
             
     
-        <a href="/tags/hexo/" title="hexo">hexo</a> / 
-    
-        <a href="/tags/git/" title="git">git</a> / 
-    
-        <a href="/tags/github/" title="github">github</a>
+        <a href="/tags/宋词/" title="宋词">宋词</a>
     
 
         </span>
@@ -214,20 +168,16 @@
     
     <span class="prev fl">
         上一篇<br>
-        <a href="/2019/01/21/django项目部署到阿里云服务器/">
-            
-                django项目部署到阿里云服务器
-            
-        </a>
+        <a href="javascript: void(0);">没有上一篇了</a>
     </span>
     
 
     
     <span class="next fr">
         下一篇<br>
-        <a href="/2019/01/09/20190109/">
+        <a href="/2019/01/21/django项目部署到阿里云服务器/">
             
-                20190109学习记录
+                django项目部署到阿里云服务器
             
         </a>
     </span>
