@@ -131,6 +131,64 @@
     <header>
         <!-- 标签这有且只能显示一个 -->
         
+        <a class="cat-link" href="/categories/python/">python</a>
+        
+        <!-- 文章标题 -->
+        
+    <h3 class="post-title">
+    	<a href="http://yxj-saber.github.io/2020/11/19/deepcopy/">
+    		deepcopy/logger
+    	</a>
+    </h3>
+
+    </header>
+    <p class="post-meta">
+        yxjsaber 发表于
+        <time datetime="2020-11-19T13:35:00.000Z">2020-11-19</time>
+        &nbsp;&nbsp;
+        <span class="post-tags">
+            标签：
+            
+    
+        <a href="/tags/python/" title="python">python</a> / 
+    
+        <a href="/tags/django/" title="django">django</a>
+    
+
+        </span>
+    </p>
+
+    <div class="post-content">
+        <div class="post-excerpt">
+            
+                <h4 id="1-值传递和引用传递"><a href="#1-值传递和引用传递" class="headerlink" title="1. 值传递和引用传递"></a>1. 值传递和引用传递</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"></span><br><span class="line">meta_dict = &#123;</span><br><span class="line">    <span class="string">'a'</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">'b'</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">'c'</span>: <span class="number">0</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">result = &#123;&#125;</span><br><span class="line">keys1 = [<span class="string">'key1'</span>, <span class="string">'key2'</span>, <span class="string">'key3'</span>]</span><br><span class="line">keys2 = [<span class="string">'key1'</span>, <span class="string">'key4'</span>, <span class="string">'key5'</span>]</span><br><span class="line">keys3 = [<span class="string">'key1'</span>, <span class="string">'key6'</span>, <span class="string">'key7'</span>]</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys1:</span><br><span class="line">    result.setdefault(key, meta_dict)</span><br><span class="line">    result[key][<span class="string">'a'</span>] += <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys2:</span><br><span class="line">    result.setdefault(key, meta_dict)</span><br><span class="line">    result[key][<span class="string">'a'</span>] += <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys3:</span><br><span class="line">    result.setdefault(key, meta_dict)</span><br><span class="line">    result[key][<span class="string">'a'</span>] += <span class="number">1</span></span><br><span class="line"><span class="comment"># result['key1']['a'] = ?</span></span><br><span class="line"><span class="comment"># result['key2']['a'] = ?</span></span><br><span class="line"><span class="comment"># result['key3']['a'] = ?</span></span><br></pre></td></tr></table></figure>
+<p>9/9/9</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> copy</span><br><span class="line"><span class="keyword">from</span> collections <span class="keyword">import</span> defaultdict</span><br><span class="line"></span><br><span class="line">meta_dict = &#123;</span><br><span class="line">    <span class="string">'a'</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">'b'</span>: <span class="number">0</span>,</span><br><span class="line">    <span class="string">'c'</span>: <span class="number">0</span>,</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">result = &#123;&#125;</span><br><span class="line">keys1 = [<span class="string">'key1'</span>, <span class="string">'key2'</span>, <span class="string">'key3'</span>]</span><br><span class="line">keys2 = [<span class="string">'key1'</span>, <span class="string">'key4'</span>, <span class="string">'key5'</span>]</span><br><span class="line">keys3 = [<span class="string">'key1'</span>, <span class="string">'key6'</span>, <span class="string">'key7'</span>]</span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys1:</span><br><span class="line">    result.setdefault(key, copy.deepcopy(meta_dict))</span><br><span class="line">    result[key][<span class="string">'a'</span>] += <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys2:</span><br><span class="line">    result.setdefault(key, copy.deepcopy(meta_dict))</span><br><span class="line">    result[key][<span class="string">'a'</span>] += <span class="number">1</span></span><br><span class="line"><span class="keyword">for</span> key <span class="keyword">in</span> keys3:</span><br><span class="line">    result.setdefault(key, copy.deepcopy(meta_dict))</span><br><span class="line">    result[key][<span class="string">'a'</span>] += <span class="number">1</span></span><br><span class="line"><span class="comment"># result['key1']['a'] = ?</span></span><br><span class="line"><span class="comment"># result['key2']['a'] = ?</span></span><br><span class="line"><span class="comment"># result['key3']['a'] = ?</span></span><br></pre></td></tr></table></figure>
+<p>3/1/1</p>
+<h4 id="2-django日志"><a href="#2-django日志" class="headerlink" title="2. django日志"></a>2. django日志</h4><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> logging</span><br><span class="line">log_name, log_path</span><br></pre></td></tr></table></figure>
+<p>存在两个文件的logger的log_name相同时，如果两个文件中的函数有互相引用，django的日志则会出现重复打印两次的问题。</p>
+
+            
+            <p class="more">
+                <a href="http://yxj-saber.github.io/2020/11/19/deepcopy/">阅读剩下更多</a>
+            </p>
+        </div>
+        <div class="post-thumbnail" data-img="">
+            <a href="http://yxj-saber.github.io/2020/11/19/deepcopy/" title="deepcopy/logger">
+                
+                    <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/9.jpg" alt="默认配图">
+                
+            </a>
+        </div>
+    </div>
+</article>
+
+    
+        <!-- 文章列表 item -->
+<article class="post">
+    <header>
+        <!-- 标签这有且只能显示一个 -->
+        
         <a class="cat-link" href="/categories/go/">go</a>
         
         <!-- 文章标题 -->
@@ -381,6 +439,11 @@
     </li>
     
     <li>
+        <a href="/categories/python/">python</a>
+        <span class="badge">(1)</span>
+    </li>
+    
+    <li>
         <a href="/categories/web/">web</a>
         <span class="badge">(2)</span>
     </li>
@@ -418,15 +481,17 @@
   
     <a class="tag-item" href="/tags/MySQL/" title="MySQL">MySQL (3)</a>
   
-    <a class="tag-item" href="/tags/Redis/" title="Redis">Redis (2)</a>
+    <a class="tag-item" href="/tags/python/" title="python">python (11)</a>
   
-    <a class="tag-item" href="/tags/python/" title="python">python (10)</a>
+    <a class="tag-item" href="/tags/Redis/" title="Redis">Redis (2)</a>
   
     <a class="tag-item" href="/tags/linux/" title="linux">linux (3)</a>
   
     <a class="tag-item" href="/tags/Django/" title="Django">Django (7)</a>
   
     <a class="tag-item" href="/tags/Web前端/" title="Web前端">Web前端 (1)</a>
+  
+    <a class="tag-item" href="/tags/django/" title="django">django (2)</a>
   
     <a class="tag-item" href="/tags/hexo/" title="hexo">hexo (1)</a>
   
@@ -443,8 +508,6 @@
     <a class="tag-item" href="/tags/潜规则/" title="潜规则">潜规则 (1)</a>
   
     <a class="tag-item" href="/tags/宋词/" title="宋词">宋词 (1)</a>
-  
-    <a class="tag-item" href="/tags/django/" title="django">django (1)</a>
   
     <a class="tag-item" href="/tags/uwsgi/" title="uwsgi">uwsgi (1)</a>
   

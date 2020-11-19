@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
     <meta name="baidu-site-verification" content="dIcXMeY8Ya">
     
-    <title>`hexo`标签下的文章 | yxjsaber</title>
+    <title>`python`标签下的文章 | yxjsaber</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="keywords" content="yxj-saber, python">
     <meta name="description" content="yxj-saber个人博客">
@@ -56,19 +56,19 @@
         <div class="dropnav icon-paragraph-justify" id="JELON__btnDropNav"></div>
         <ul class="menu hidden" id="JELON__menu">
             
-            <li rel="/tags/hexo/index.html" class="item ">
+            <li rel="/tags/python/page/2/index.html" class="item ">
                 <a href="/" title="首页" class="icon-home">&nbsp;首页</a>
             </li>
             
-            <li rel="/tags/hexo/index.html" class="item ">
+            <li rel="/tags/python/page/2/index.html" class="item ">
                 <a href="/lab/" title="实验室" class="icon-lab">&nbsp;实验室</a>
             </li>
             
-            <li rel="/tags/hexo/index.html" class="item ">
+            <li rel="/tags/python/page/2/index.html" class="item ">
                 <a href="/about/" title="关于" class="icon-about">&nbsp;关于</a>
             </li>
             
-            <li rel="/tags/hexo/index.html" class="item ">
+            <li rel="/tags/python/page/2/index.html" class="item ">
                 <a href="/comment/" title="留言" class="icon-comment">&nbsp;留言</a>
             </li>
             
@@ -120,7 +120,7 @@
     <h3 class="widget-hd">
         <strong>
             
-                `hexo`标签下的文章
+                `python`标签下的文章
             
         </strong>
     </h3>
@@ -130,30 +130,30 @@
     <header>
         <!-- 标签这有且只能显示一个 -->
         
-        <a class="cat-link" href="/categories/web/">web</a>
+        <a class="cat-link" href="/categories/2018年12月/">2018年12月</a>
         
         <!-- 文章标题 -->
         
     <h3 class="post-title">
-    	<a href="http://yxj-saber.github.io/2019/01/21/20190121/">
-    		hexo+git+github搭建博客
+    	<a href="http://yxj-saber.github.io/2018/12/26/20181226/">
+    		20181226学习记录
     	</a>
     </h3>
 
     </header>
     <p class="post-meta">
         yxjsaber 发表于
-        <time datetime="2019-01-21T11:07:21.367Z">2019-01-21</time>
+        <time datetime="2018-12-26T12:07:31.672Z">2018-12-26</time>
         &nbsp;&nbsp;
         <span class="post-tags">
             标签：
             
     
-        <a href="/tags/hexo/" title="hexo">hexo</a> / 
+        <a href="/tags/数据库/" title="数据库">数据库</a> / 
     
-        <a href="/tags/git/" title="git">git</a> / 
+        <a href="/tags/MySQL/" title="MySQL">MySQL</a> / 
     
-        <a href="/tags/github/" title="github">github</a>
+        <a href="/tags/python/" title="python">python</a>
     
 
         </span>
@@ -162,64 +162,16 @@
     <div class="post-content">
         <div class="post-excerpt">
             
-                <h2 id="hexo-github-git-搭建个人博客"><a href="#hexo-github-git-搭建个人博客" class="headerlink" title="hexo + github + git 搭建个人博客"></a>hexo + github + git 搭建个人博客</h2><h3 id="1-安装配置git"><a href="#1-安装配置git" class="headerlink" title="1. 安装配置git"></a>1. 安装配置git</h3><h3 id="2-安装配置Node-js"><a href="#2-安装配置Node-js" class="headerlink" title="2. 安装配置Node.js"></a>2. 安装配置Node.js</h3><h3 id="3-在github上注册一个仓库"><a href="#3-在github上注册一个仓库" class="headerlink" title="3. 在github上注册一个仓库"></a>3. 在github上注册一个仓库</h3><h3 id="4-hexo的下载和安装"><a href="#4-hexo的下载和安装" class="headerlink" title="4. hexo的下载和安装"></a>4. hexo的下载和安装</h3><h3 id="5-部分报错"><a href="#5-部分报错" class="headerlink" title="5. 部分报错"></a>5. 部分报错</h3><hr>
-<h3 id="1-安装配置git-1"><a href="#1-安装配置git-1" class="headerlink" title="1. 安装配置git"></a>1. 安装配置git</h3><p>​    Windows：下载并安装<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a></p>
-<h3 id="2-安装配置Node-js-1"><a href="#2-安装配置Node-js-1" class="headerlink" title="2. 安装配置Node.js"></a>2. 安装配置Node.js</h3><p>​    安装Node.js的最佳方式是使用nvm</p>
-<p>​    cURL:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh</span><br></pre></td></tr></table></figure>
-<p>​    Wget:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget -qO- https://raw.github.com/creationix/nvm/v0.33.11/install.sh | sh</span><br></pre></td></tr></table></figure>
-<p>​    安装完成后，重启终端并执行下列命令即可安装Node.js</p>
-<p>​    Windows下上述安装方式可能存在问题，也可以下载<a href="https://nodejs.org/en/" target="_blank" rel="noopener">安装程序</a>来安装</p>
-<h3 id="3-在github上注册一个仓库-1"><a href="#3-在github上注册一个仓库-1" class="headerlink" title="3. 在github上注册一个仓库"></a>3. 在github上注册一个仓库</h3><ul>
-<li>新建一个名为 你的用户名.github.io 的仓库，比如说，如果你的github用户名是test，那么你就新建test.github.io的仓库（必须是你的用户名，其它名称无效），将来你的网站访问地址就是 <a href="http://test.github.io" target="_blank" rel="noopener">http://test.github.io</a> 了， 每一个github账户最多只能创建一个这样可以直接使用域名访问的仓库。 </li>
-<li>几个注意的地方： <ul>
-<li>注册的邮箱一定要验证，否则不会成功； </li>
-<li>仓库名字必须是：username.github.io，其中username是你的用户名； </li>
-<li>创建成功后，默认会在你这个仓库里生成一些示例页面，以后你的网站所有代码都是放在这个仓库里啦</li>
-</ul>
-</li>
-</ul>
-<h3 id="4-hexo的下载和安装-1"><a href="#4-hexo的下载和安装-1" class="headerlink" title="4. hexo的下载和安装"></a>4. hexo的下载和安装</h3><ul>
-<li><p>利用npm命令下载安装hexo</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建博客文件夹</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># &lt;folder&gt;整体表示一个文件夹</span><br><span class="line">hexo init &lt;folder&gt;</span><br><span class="line">cd &lt;folder&gt;</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>_config.yml</p>
-<p>配置githun仓库的相关信息到hexo配置</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@***.github.com:***/***.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p><img src="/2019/01/21/20190121/1548070120472.png" alt="1548070120472"></p>
-<p>在_config.yml的最后添加如下信息，repo是在github上创建的仓库的ssh地址，形如上述代码块的模式。</p>
-</li>
-<li><p>部署到github</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在浏览器中输入<a href="https://username.github.io即可访问博客所在网站" target="_blank" rel="noopener">https://username.github.io即可访问博客所在网站</a></p>
-</li>
-</ul>
-<h3 id="5-部分报错-1"><a href="#5-部分报错-1" class="headerlink" title="5. 部分报错"></a>5. 部分报错</h3><ul>
-<li><p>找不到git部署 Error Deployer not found: git</p>
-<p>解决方法</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>部署类型设置为git</p>
-<p>hexo 3.0 部署类型不再是github，_config.yml中修改</p>
-</li>
-</ul>
-<h3 id="6-其他问题"><a href="#6-其他问题" class="headerlink" title="6. 其他问题"></a>6. 其他问题</h3><p>​    主题更换，文章编辑，域名绑定等相关问题不作说明，请自行参考其他资料解决。</p>
-<p>​    <a href="https://hexo.bootcss.com/docs/index.html" target="_blank" rel="noopener">一个详细的搭建教程——可参考</a></p>
-
+                <h3 id="1-select查询"><a href="#1-select查询" class="headerlink" title="1. select查询"></a>1. select查询</h3><h3 id="2-DCL数据控制语言"><a href="#2-DCL数据控制语言" class="headerlink" title="2. DCL数据控制语言"></a>2. DCL数据控制语言</h3><h3 id="3-python数据库操作"><a href="#3-python数据库操作" class="headerlink" title="3. python数据库操作"></a>3. python数据库操作</h3><hr>
             
             <p class="more">
-                <a href="http://yxj-saber.github.io/2019/01/21/20190121/">阅读剩下更多</a>
+                <a href="http://yxj-saber.github.io/2018/12/26/20181226/">阅读剩下更多</a>
             </p>
         </div>
         <div class="post-thumbnail" data-img="">
-            <a href="http://yxj-saber.github.io/2019/01/21/20190121/" title="hexo+git+github搭建博客">
+            <a href="http://yxj-saber.github.io/2018/12/26/20181226/" title="20181226学习记录">
                 
-                    <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/1.jpg" alt="默认配图">
+                    <img class="thumbnail" src="/img/default.png" data-echo="/img/thumbnail/6.jpg" alt="默认配图">
                 
             </a>
         </div>
@@ -230,7 +182,7 @@
 
     
     <nav class="page-navigator">
-        <span class="page-number current">1</span>
+        <a class="extend prev" rel="prev" href="/tags/python/">前一页</a><a class="page-number" href="/tags/python/">1</a><span class="page-number current">2</span>
     </nav>
     
 
